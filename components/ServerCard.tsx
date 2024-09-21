@@ -94,12 +94,12 @@ export default function ServerCard({
   ) : (
     <Card
       className={
-        "flex flex-col items-center justify-start gap-3 p-3 md:px-5 lg:flex-row"
+        "flex flex-col items-center justify-start gap-3 p-3 md:px-5"
       }
     >
       <Popover>
         <PopoverTrigger asChild>
-          <section className={"flex items-center justify-start gap-2 lg:w-28"}>
+          <section className={"flex items-center justify-start gap-2"}>
             {showFlag ? (
               country_code ? (
                 <span className="text-[12px] text-muted-foreground">
