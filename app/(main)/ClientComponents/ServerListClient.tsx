@@ -13,6 +13,7 @@ export default function ServerListClient() {
   if (!data) return null;
 
   const sortedServers = data.result.sort((a, b) => {
+    consolg.log(a,b)
     if (a.display_index && b.display_index) {
       return b.display_index - a.display_index;
     }
