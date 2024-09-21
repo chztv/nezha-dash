@@ -16,7 +16,7 @@ export async function GetNezhaData() {
     nezhaBaseUrl = process.env.NezhaBaseUrl.slice(0, -1);
   }
   try {
-    const response = await fetch(nezhaBaseUrl + "/api/v1/server/details?tag='Hinet订阅'", {
+    const response = await fetch(nezhaBaseUrl + "/api/v1/server/details?tag=Hinet订阅", {
       headers: {
         Authorization: process.env.NezhaAuth as string,
       },
