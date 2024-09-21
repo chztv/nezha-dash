@@ -18,7 +18,7 @@ export default function ServerListClient() {
     }
     if (a.display_index) return -1;
     if (b.display_index) return 1;
-    return a.name - b.name;
+    return a.id - b.id;
   });
 
   return (
